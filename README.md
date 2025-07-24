@@ -1,6 +1,6 @@
 # DMGL: Dynamic Multispace Geometric Learning for Multimodal Temporal Knowledge Graph Forecasting
 
-This is the released codes of the anonymous submission to the AAAI 2026:
+This is the released codes of the anonymous submission to the KDD 2026:
 
 ## Environment
 
