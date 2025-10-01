@@ -1,6 +1,6 @@
-# DMGL: Dynamic Multispace Geometric Learning for Multimodal Temporal Knowledge Graph Forecasting
+# DyMRL: Dynamic Multispace Representation Learning for Event Forecasting in Multimodal Temporal Knowledge Graphs
 
-This is the released codes of the anonymous submission to the KDD 2026:
+This is the released codes of the anonymous submission to the WWW 2026:
 
 ## Environment
 
@@ -14,7 +14,7 @@ numpy==1.26.4
 
 ## Introduction
 
-- ``src``: Python scripts of the DMGL model.
+- ``src``: Python scripts of the DyMRL model.
 - ``results``: Model files that replicate the reported results in our paper.
 - ``data``: The four constructed MTKGs including ICE14-IMG-TXT, ICE18-IMG-TXT, ICE0515-IMG-TXT, GDELT-IMG-TXT.
 - ``plms``: Pretrained models for encoding auxiliary modalities.
