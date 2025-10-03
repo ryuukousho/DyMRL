@@ -1,4 +1,4 @@
-# DyMRL: Dynamic Multispace Representation Learning for Event Forecasting in Multimodal Temporal Knowledge Graphs
+# DyMRL: Dynamic Multispace Representation Learning for Multimodal Event Forecasting in Knowledge Graph
 
 This is the released codes of the anonymous submission to the WWW 2026:
 
