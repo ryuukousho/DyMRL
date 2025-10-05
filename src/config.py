@@ -1,13 +1,13 @@
 import argparse
 
-parser = argparse.ArgumentParser(description="Knowledge Graph Embedding")
+parser = argparse.ArgumentParser(description="DyMRL")
 parser.add_argument("--dataset", "--d", type=str, default="DEBUG",
                     help="Multimodal Temporal Knowledge Graph dataset")
 parser.add_argument("--figenc", type=str, default="vgg19",
                     help="Visual Encoder")
 parser.add_argument("--txtenc", type=str, default="bert-base-uncased",
                     help="Linguistic Encoder")
-parser.add_argument("--model", choices=['DMGL'], default="DMGL",
+parser.add_argument("--model", choices=['DyMRL'], default="DyMRL",
                     help="Multimodal Temporal Knowledge Graph embedding models")
 parser.add_argument("--debug", action="store_true",
                     help="Only use 1000 examples for debugging")
