@@ -124,9 +124,9 @@ class AdaptiveCurvatureDistance(Basemodel):
         return (res, c), self.bh(queries[:, 0])
 
 
-class DMGL(AdaptiveCurvatureDistance):
+class DyMRL(AdaptiveCurvatureDistance):
     def __init__(self, args):
-        super(DMGL, self).__init__(args)
+        super(DyMRL, self).__init__(args)
         self.device = args.device
         self.n_layers = args.n_layers
         self.history_len = args.history_len
@@ -163,7 +163,7 @@ class DMGL(AdaptiveCurvatureDistance):
         self.layers_c = nn.ModuleList()
         self.static_layers = nn.ModuleList()
         self.build_layers(args)
-        if self.model_name == 'DMGL':
+        if self.model_name == 'DyMRL':
             self.s_hp = nn.Parameter(torch.Tensor([args.s_hp]), requires_grad=False)
             self.s_delta_ind = args.s_delta_ind
             if args.s_hp < 0:
@@ -262,7 +262,7 @@ class DMGL(AdaptiveCurvatureDistance):
 
     def reason(self, queries, ent_emb, eval_mode=False, epoch=1000, rel_emb=None, c=None):
         new_factors, old_factors = None, None
-        if self.model_name == 'DMGL' and self.s_hp != 0:
+        if self.model_name == 'DyMRL' and self.s_hp != 0:
             new_ent_emb = F.dropout(ent_emb, self.reason_dropout, training=self.training)
             init_ent_emb = self.init_ent_emb.weight
             new_score, new_factors = self.forward(queries, new_ent_emb, eval_mode=eval_mode)
