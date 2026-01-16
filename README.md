@@ -16,7 +16,6 @@ numpy==1.26.4
 
 - ``src``: Python scripts of the DyMRL model.
 - ``results``: Model files that replicate the reported results in our paper.
-- ``data``: The four constructed multimodal temporal KGs including ICE14-IMG-TXT, ICE18-IMG-TXT, ICE0515-IMG-TXT, GDELT-IMG-TXT.
 - ``plms``: Pretrained models for encoding auxiliary modalities.
 - ``pretrain``: Auxiliary linguistic and visual modality feature matrices of multimodal temporal KGs.
 
