@@ -1,6 +1,6 @@
 # DyMRL: Dynamic Multispace Representation Learning for Multimodal Event Forecasting in Knowledge Graph
 
-This is the released codes of the anonymous submission to the WWW 2026:
+This is the released codes of the work in the ACM Web Conference 2026 (WWW'26):
 
 ## Environment
 
@@ -18,7 +18,6 @@ numpy==1.26.4
 - ``results``: Model files that replicate the reported results in our paper.
 - ``data``: The four constructed multimodal temporal KGs including ICE14-IMG-TXT, ICE18-IMG-TXT, ICE0515-IMG-TXT, GDELT-IMG-TXT.
 - ``plms``: Pretrained models for encoding auxiliary modalities.
-- ``preprocess``: Python scripts of data preprocessing. Specifically, `crawl_img.py` and `crawl_txt.py` collect time-sensitive images and texts for multimodal temporal KGs. `1_picencode_dataset_vgg19.py` encodes images and applies mean pooling for each event (entity) at different timestamps. `_fig_encode_matrices_dataset.py` stacks image embeddings to generate time-sensitive visual feature matrices. `docencode.py` encodes descriptions to produce time-sensitive linguistic feature matrices.
 - ``pretrain``: Auxiliary linguistic and visual modality feature matrices of multimodal temporal KGs.
 
 
