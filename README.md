@@ -59,3 +59,11 @@ CUDA_VISIBLE_DEVICES=0 python main.py --model DyMRL --dataset ICE18-IMG-TXT --bi
 ```shell
 CUDA_VISIBLE_DEVICES=0 python main.py --model DyMRL --dataset GDELT-IMG-TXT --bias learn --s-delta-ind --n-head 2 --rank 20 --history-len 5 --test
 ```
+
+## Contacts
+
+Contact us with the following email address: FrankLuis@hust.edu.cn.
+
+## Acknowledgements
+
+The source codes take [ReTIN](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cit2.12186) as the backbone to implement our proposed method. Please cite both our work and [ReTIN](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cit2.12186) if you find this repository is helpful for your research.
