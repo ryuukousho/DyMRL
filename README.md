@@ -16,7 +16,6 @@ numpy==1.26.4
 
 - ``src``: Python scripts of the DyMRL model.
 - ``results``: Model files that replicate the reported results in our paper.
-- ``plms``: Pretrained models for encoding auxiliary modalities.
 - ``pretrain``: Auxiliary linguistic and visual modality feature matrices of multimodal temporal KGs.
 
 
